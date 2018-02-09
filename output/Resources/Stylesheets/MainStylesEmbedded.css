@@ -497,6 +497,16 @@ MadCap|glossaryTerm:focus
 		mc-hyphenate: never;
 		mc-hyphenate-shortest-prefix: 20;
 	}
+
+	p.tabletext
+	{
+		
+	}
+
+	MadCap|xref
+	{
+		mc-format: '{h1} on page {page}';
+	}
 }
 
 li.bullet
@@ -511,7 +521,9 @@ p.bullet
 
 h4.RelatedTopicHeading
 {
-	
+	margin-bottom: 1rem;
+	font-weight: bold;
+	font-style: normal;
 }
 
 p.RelatedTopic
@@ -577,5 +589,25 @@ p.small
 div.footer
 {
 	text-align: center;
+}
+
+h2.NotInToc
+{
+	
+}
+
+p.tabletext
+{
+	
+}
+
+p.spacing
+{
+	margin-bottom: 1px;
+}
+
+p.important
+{
+	mc-auto-number-format: '{b}{color red}Important! {/color}{/b} ';
 }
 

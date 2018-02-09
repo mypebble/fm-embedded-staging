@@ -620,12 +620,37 @@ small
 
 	MadCap|xref
 	{
-		mc-format: '{h1} on page {page}.';
+		mc-format: '{h1} on page {page}';
 	}
 
 	div.GlossaryPageTerm
 	{
 		mc-hyphenate-shortest-word: 20;
+	}
+
+	MadCap|xref.TOCPageNumber
+	{
+		mc-format: '{h1} on page {page}';
+		color: #000000;
+		text-decoration: none;
+	}
+
+	MadCap|xref.textinsidechapter
+	{
+		mc-format: '{h2} on page {page}';
+	}
+
+	MadCap|xref.textinchapter
+	{
+		mc-format: '{h1} on page {page}';
+	}
+
+	h4.RelatedTopicHeading
+	{
+		margin-bottom: 1rem;
+		font-weight: bold;
+		font-style: normal;
+		margin-top: 0;
 	}
 }
 
@@ -743,16 +768,21 @@ p.pagebreakafter
 
 MadCap|xref.textinchapter
 {
-	mc-format: '{pageref}';
+	mc-format: '{para}';
 }
 
 MadCap|xref.textinsidechapter
 {
-	mc-format: '{h2} on page {page}.';
+	mc-format: '{para}';
 }
 
 p.red
 {
 	color: #ff0000;
+}
+
+p.important
+{
+	mc-auto-number-format: '{b}{color red}Important! {/color}{/b} ';
 }
 
